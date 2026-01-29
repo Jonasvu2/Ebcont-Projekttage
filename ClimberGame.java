@@ -95,7 +95,7 @@ class ClimberGamePanel extends JPanel implements ActionListener {
 
     // Physik
     // Physik
-    private static final double GRAVITY = 0.6; // Higher gravity for snappier feel
+    private static final double GRAVITY = 0.9; // Very strong gravity
     // JUMP_FORCE and MOVE_SPEED now in Avatar
 
     // --- AVATAR SYSTEM ---
@@ -147,11 +147,11 @@ class ClimberGamePanel extends JPanel implements ActionListener {
         setFocusable(true);
 
         // Init Avatars
-        // Init Avatars (Faster speeds & Higher Jumps)
-        avatars.add(new Avatar("Standard", Color.WHITE, -18, 10, false, 0, true));
-        avatars.add(new Avatar("Jumper (High Jump)", Color.YELLOW, -22, 10, false, 50, false));
-        avatars.add(new Avatar("Dasher (Speed)", Color.CYAN, -18, 13, true, 200, false));
-        avatars.add(new Avatar("Ultimate", Color.MAGENTA, -24, 15, true, 500, false));
+        // Init Avatars (Even Faster speeds & STRONGER Jumps for high gravity)
+        avatars.add(new Avatar("Standard", Color.WHITE, -22, 12, false, 0, true));
+        avatars.add(new Avatar("Jumper (High Jump)", Color.YELLOW, -26, 12, false, 50, false));
+        avatars.add(new Avatar("Dasher (Speed)", Color.CYAN, -22, 15, true, 200, false));
+        avatars.add(new Avatar("Ultimate", Color.MAGENTA, -28, 18, true, 500, false));
         currentAvatar = avatars.get(0);
 
         addKeyListener(new KeyAdapter() {

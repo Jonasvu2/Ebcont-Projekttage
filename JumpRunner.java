@@ -77,8 +77,8 @@ class JumpRunnerPanel extends JPanel implements ActionListener {
     private double velocityY = 0;
     private boolean isJumping = false;
     private boolean isDoubleJumpAvailable = true;
-    private static final double GRAVITY = 1.5;
-    private static final double JUMP_FORCE = -22;
+    private static final double GRAVITY = 2.5; // Heavy gravity
+    private static final double JUMP_FORCE = -28; // Explosive jump
 
     // Spiel
     private boolean running = true;
@@ -133,7 +133,7 @@ class JumpRunnerPanel extends JPanel implements ActionListener {
         score = 0;
         distance = 0;
         distance = 0;
-        gameSpeed = 12; // Even faster start
+        gameSpeed = 15; // Super fast start
 
         // Initiale Wolken
         Random rand = new Random();
@@ -189,7 +189,7 @@ class JumpRunnerPanel extends JPanel implements ActionListener {
 
         // Geschwindigkeit erhöhen
         if (distance % 400 == 0) {
-            gameSpeed = Math.min(gameSpeed + 0.5, 35);
+            gameSpeed = Math.min(gameSpeed + 0.5, 45);
         }
 
         // Spieler Physik
