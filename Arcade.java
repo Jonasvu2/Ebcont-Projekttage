@@ -24,7 +24,8 @@ public class Arcade extends JFrame {
             { "Tier Memory", "AnimalMemoryGame", new Color(99, 102, 241) },
             { "Snake", "SnakeGame", new Color(18, 185, 129) },
             { "Galactic Tycoon", "TycoonGame", new Color(129, 140, 248) },
-            { "Schere Stein Papier", "SchereSteinPapierGUI", new Color(239, 68, 68) }
+            { "Schere Stein Papier", "SchereSteinPapierGUI", new Color(239, 68, 68) },
+            { "Tic Tac Toe", "TicTacToeGUI", new Color(34, 211, 238) }
     };
 
     public Arcade() {
